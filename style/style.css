@@ -1,0 +1,317 @@
+@charset "UTF-8";
+
+/* Reset */
+* {
+  color: #333; 
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+a:link {
+  color: #444;
+}
+
+a:visited {
+  color: #444;
+}
+
+a:hover {
+  color: #555;
+}
+
+a:active {
+  color: #555;
+}
+
+img {
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex-container {
+  display: flex;
+}
+/* Reset */
+
+/* div#wrap */
+div#wrap {
+  width: 1000px;
+  margin: 10px;
+}
+/* div#wrap */
+
+/* header#header */
+header#header {
+  width: 200px;
+}
+
+/* nav#gnb */
+nav#gnb {
+  padding: 3px;
+  /* border: 1px solid #000; */
+  margin: 2px;
+}
+
+#gnb > ul#mainMenu {
+  padding: 10px;
+  /* border: 1px solid #f80; */
+
+  position: relative;
+  z-index: 9999;
+}
+
+#gnb li.mainLi {
+  text-align: center;
+  /* border: 1px solid #08f; */
+}
+
+#gnb a {
+  width: 150px;
+  height: 40px;
+  font-weight: bold;
+  line-height: 40px;
+  border: 1px solid #aaa;
+  display: inline-block;
+}
+
+#gnb li.mainLi > a {
+  height: 50px;
+  line-height: 50px;
+}
+
+#gnb li.mainLi:hover > a {
+  color: #fff;
+  background-color: rgba(0, 136, 255, 0.75);
+}
+
+#gnb li.subLi a {
+  color: #fff;
+  background-color: rgba(0, 136, 255, 0.6);
+}
+
+#gnb li.subLi a:hover {
+  color: #444;
+  background-color: #fff;
+}
+
+#gnb ul.subMenu {
+  display: none;
+
+  position: absolute;
+  left: 168px;
+  top: 0px;
+}
+
+#gnb li.subLi:last-child a {
+  padding-bottom: 160px;
+}
+/* nav#gnb */
+
+/* header#header */
+
+/* main#main */
+main#main {
+  flex: 1;
+}
+
+/* div#slide */
+div#slide {
+  width: 780px;
+  height: 350px;
+}
+
+#slide > div#shuttleFrame {
+  width: 780px;
+  height: 350px;
+}
+
+#slide a {
+  width: 780px;
+  height: 350px;
+  display: inline-block;
+  position: absolute;
+}
+
+#slide a:not(:first-child) {
+  display: none;
+}
+
+#slide span {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 20px;
+  border: 4px solid #aaa;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.801);
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/* div#slide */
+
+/* div#contents */
+div#contents {
+  height: 200px;
+}
+
+#main #contents > * {
+  padding: 20px 4px;
+  /* border: 1px solid #000; */
+}
+
+#main #bbsNotice {
+  width: 310px;
+}
+
+#main #bbsGallery {
+  width: 320px;
+}
+
+#main button {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 2px 10px;
+  border: 1px solid #aaa;
+  position: relative;
+  left: 16px;
+  top: 1px;
+}
+
+#main #bbsNotice button {
+  border-bottom-color: #fff;
+  background-color: #fff;
+}
+
+#main div.tabContents {
+  padding: 10px 4px;
+  border: 1px solid #aaa;
+}
+
+#main #bbsNotice table td {
+  font-size: 15px;
+  line-height: 21px;
+}
+#main #bbsNotice table td:first-child {
+  padding-right: 13px;
+}
+
+#main #bbsGallery table {
+  margin: 0 auto;
+}
+
+/* #main #banner  */
+#main #banner {
+  width: 150px;
+}
+
+#main #banner a {
+  height: 148px;
+  line-height: 148px;
+}
+/* #main #banner */
+/* div#contents */
+
+/* footer#footer */
+ #footer #footerMain li {
+   /* border: 1px solid #000; */
+   float: left;
+ }
+
+ #footer #footerMain li:first-child {
+   margin-left: 45px;
+ }
+
+ #footer #footerMain::before {
+   content: "";
+   height: 50px;
+   /* border: 1px solid #000; */
+   margin-left: 40px;
+   display: inline-block;
+ }
+
+ #footer #footerMain a {
+   height: 50px;
+   line-height: 50px;
+   padding: 0 20px;
+   /* border: 1px solid #000; */
+   display: inline-block;
+ }
+
+ div#copyright {
+   height: 50px;
+   text-align: center;
+   line-height: 50px;
+   /* border: 1px solid #f00; */
+ }
+/* footer#footer */
+/* div#contents */
+/* main#main */
+
+/* layerPopup div#layerBG  */
+div#popPoint {
+  cursor: pointer;
+}
+
+div#layerBG {
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0);
+
+  display: none;
+}
+
+div#layerPopup {
+  padding: 20px;
+  border: 4px solid #aaa;
+  border-radius: 10px;
+  background-color: #fff;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#layerBG ol {
+  font-size: 20px;
+  line-height: 36px;
+  margin: 20px 0;
+
+  list-style-position: inside;
+}
+
+#layerBG ol span {
+  text-indent: 110px;
+  display: inline-block;
+}
+
+#layerPopup #closeBtnArea {
+  text-align: right;
+}
+
+#layerPopup button {
+  font-size: 17px;
+  font-weight: bold;
+  padding: 2px 14px;
+}
+
+#layerPopup h1 {
+  text-align: center;
+}
+/* layerPopup div#layerBG */
